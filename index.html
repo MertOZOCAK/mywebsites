@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,211 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="header.css">
 </head>
-<body>
 
+<body>
+    <header class="header">
+        <div class="user">
+            <img src="modern desktop computer-amico.png" alt="">
+            <h3>Burak Mert Özocak</h3>
+            <p>OSB Teknik Koleji Öğrencisi</p>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Anasayfa</a>
+            <a href="#about">Hakkımda</a>
+            <a href="#services">Hizmetler</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div id="menu-btn" onclick="" class="fas fa-bars"></div>
+    <div id="theme-toggler" class="fas fa-sun"></div>
+    <div id="theme-messager" class="fas fa-comment"></div>
+    
+    <div id="chatPanel">
+        <div class="chat-header">Canlı Sohbet Botu (Beta)</div>
+        <div class="chat-messages" id="chatMessages">
+        </div>
+        <div class="chat-input">
+          <input type="text" id="chatInput" placeholder="Mesaj yaz...">
+          <button id="sendBtn">Gönder</button>
+        </div>
+      </div>
+      
+    
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Burak Mert Özocak</h3>
+            <p>OSB Teknik Koleji Öğrencisi</p>
+            <a href="#" class="btn">CV İndirmek İçin Tıklayın</a>
+        </div>
+
+        <div class="share">
+            <a href="" class="fab fa-facebook-f"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-instagram"></a>
+            <a href="" class="fab fa-discord"></a>
+            <a href="" class="fab fa-pinterest"></a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading">Benim <span>Hakkımda</span></h1>
+
+        <div class="row">
+            <div class="box-container">
+                <div class="box">
+                    <h3>2+</h3>
+                    <p>Yıllık Deneyim</p>
+                </div>
+                <div class="box">
+                    <h3>450+</h3>
+                    <p>Memnun Müşteri</p>
+                </div>
+                <div class="box">
+                    <h3>190+</h3>
+                    <p>Çalışma Saati</p>
+                </div>
+                <div class="box">
+                    <h3>10+</h3>
+                    <p>Kazanılan Ödül</p>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Ben <span>Burak Mert Özocak</span></h3>
+                <p>Kayseri OSB Teknik Koleji 11. Sınıf Bilişim Teknolojileri Alanı Öğrencisiyim.</p>
+                <a href="#" class="btn">Benimle İletişime Geçin</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="progress">
+                <h3>Web Design <span>%90</span></h3>
+                <div class="bar bar-1-1"><span></span></div>
+                <h3>Graphic Design <span>%75</span></h3>
+                <div class="bar bar-1-2"><span></span></div>
+                <h3>UI/UX Design <span>%80</span></h3>
+                <div class="bar bar-1-3"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>HTML<span>%95</span></h3>
+                <div class="bar bar-2-1"><span></span></div>
+                <h3>CSS<span>%85</span></h3>
+                <div class="bar bar-2-2"><span></span></div>
+                <h3>JAVASCRİPT <span>%70</span></h3>
+                <div class="bar bar-2-3"><span></span></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading"> my <span>Services</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-code"></i>
+                <h3>Web Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet modi voluptatem, aliquam tempore
+                    consectetur ducimus?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet modi voluptatem, aliquam tempore
+                    consectetur ducimus?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-mobile"></i>
+                <h3>Responsive Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet modi voluptatem, aliquam tempore
+                    consectetur ducimus?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet modi voluptatem, aliquam tempore
+                    consectetur ducimus?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-search-dollar"></i>
+                <h3>Seo Marketing</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet modi voluptatem, aliquam tempore
+                    consectetur ducimus?</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-wordpress"></i>
+                <h3>Wordpress</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet modi voluptatem, aliquam tempore
+                    consectetur ducimus?</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading"> my <span>portfolio</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="software tester-rafiki.png" alt="">
+                <div class="content">
+                    <h3>Proje 01</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="software tester-rafiki.png" alt="">
+                <div class="content">
+                    <h3>Proje 02</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="software tester-rafiki.png" alt="">
+                <div class="content">
+                    <h3>Proje 03</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="software tester-rafiki.png" alt="">
+                <div class="content">
+                    <h3>Proje 04</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="software tester-rafiki.png" alt="">
+                <div class="content">
+                    <h3>Proje 05</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="software tester-rafiki.png" alt="">
+                <div class="content">
+                    <h3>Proje 06</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>Contact</span> me </h1>
+        
+        <form action="">
+            <input type="text" placeholder="İsim" class="box">
+            <input type="email" placeholder="E-Posta" class="box">
+            <input type="text" placeholder="Subject" class="box">
+            <textarea name="" class="box" placeholder="Mesajınız" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Mesaj Yolla" class="btn">
+        </form>
+    </section>
+
+<div class="credits"> Site <span>Burak Mert ÖZOCAK</span> tarafından oluşturuldu. | Tüm Haklasrı Saklıdır</div>
+
+
+    <script src="header.js"></script>
 </body>
+
 </html>
