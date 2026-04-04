@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+8<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -219,18 +219,30 @@
 
 </html>
 
-<audio id="benimSarkim" loop>
-  <source src="sarki.mp3" type="audio/mpeg">
-  Tarayıcınız müzik çalmayı desteklemiyor.
-</audio>
-
-<div onclick="muzigiCal()" style="cursor:pointer; padding:20px; background:#f0f0f0; border:1px solid #ccc; text-align:center;">
-  Müziği Başlatmak İçin Buraya Tıkla!
-</div>
-
 <script>
-function muzigiCal() {
-  var audio = document.getElementById("benimSarkim");
-  audio.play();
+// Müzik dosyasını tanımlıyoruz
+let track = document.createElement('audio');
+track.src = "sarki.mp3"; // Dosya adın tam olarak bu olmalı
+track.loop = true;
+
+let isPlaying = false;
+
+function playpauseTrack() {
+  if (!isPlaying) playTrack();
+  else pauseTrack();
 }
-</script>
+
+function playTrack() {
+  track.play();
+  isPlaying = true;
+  // Simgeyi duraklat (pause) simgesine çevirir
+  document.querySelector(".playpause-track").innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+}
+
+function pauseTrack() {
+  track.pause();
+  isPlaying = false;
+  // Simgeyi tekrar oynat (play) simgesine çevirir
+  document.querySelector(".playpause-track").innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+}
+</script>>
