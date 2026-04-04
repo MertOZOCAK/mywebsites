@@ -197,7 +197,21 @@
         </div>
     </section>
     
-    <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+    <audio id="benimSarkim" loop>
+  <source src="sarki.mp3" type="audio/mpeg">
+</audio>
+
+<div onclick="muzigiCal()" style="cursor:pointer; padding:20px; background:white; color:black; border-radius:10px; text-align:center; margin:20px; font-weight:bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  🎵 Müziği Başlatmak İçin Buraya Tıkla!
+</div>
+
+<script>
+function muzigiCal() {
+  var audio = document.getElementById("benimSarkim");
+  audio.play();
+}
+</script>
+
 
     <section class="contact" id="contact">
         <h1 class="heading"> <span>Contact</span> me </h1>
@@ -219,30 +233,3 @@
 
 </html>
 
-<script>
-// Müzik dosyasını tanımlıyoruz
-let track = document.createElement('audio');
-track.src = "sarki.mp3"; // Dosya adın tam olarak bu olmalı
-track.loop = true;
-
-let isPlaying = false;
-
-function playpauseTrack() {
-  if (!isPlaying) playTrack();
-  else pauseTrack();
-}
-
-function playTrack() {
-  track.play();
-  isPlaying = true;
-  // Simgeyi duraklat (pause) simgesine çevirir
-  document.querySelector(".playpause-track").innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-}
-
-function pauseTrack() {
-  track.pause();
-  isPlaying = false;
-  // Simgeyi tekrar oynat (play) simgesine çevirir
-  document.querySelector(".playpause-track").innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
-}
-</script>>
